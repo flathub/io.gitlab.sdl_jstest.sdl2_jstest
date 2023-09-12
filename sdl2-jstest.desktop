@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=sdl2-jstest
+Icon=sdl2-jstest
+Terminal=true
+Exec=sdl2-jstest
+Type=Application
+Categories=Game
+StartupNotify=false
