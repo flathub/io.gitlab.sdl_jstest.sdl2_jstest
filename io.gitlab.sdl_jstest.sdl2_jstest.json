@@ -5,6 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "sdl2-jstest",
     "rename-icon": "sdl2-jstest",
+    "rename-desktop-file": "sdl2-jstest.desktop",
     "rename-appdata-file": "sdl2-jstest.appdata.xml",
     "finish-args": [
         "--device=all",
@@ -26,6 +27,19 @@
                     "type": "git",
                     "url": "https://gitlab.com/sdl-jstest/sdl-jstest.git",
                     "commit": "6f7927bfcf9cf0a2cfada54fd6e2ac22d6d9ee86"
+                }
+            ]
+        },
+        {
+            "name": "desktop",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -D sdl2-jstest.desktop /app/share/applications/sdl2-jstest.desktop"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "sdl2-jstest.desktop"
                 }
             ]
         }
