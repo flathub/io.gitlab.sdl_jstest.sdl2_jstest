@@ -3,12 +3,13 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
+    "command": "sdl2-jstest",
+    "rename-icon": "sdl2-jstest",
     "rename-appdata-file": "sdl2-jstest.appdata.xml",
     "finish-args": [
         "--device=all",
         "--share=ipc",
-        "--socket=x11",
-        "--socket=wayland"
+        "--socket=x11"
     ],
     "modules": [
         "ncurses-6.1.json",
@@ -17,7 +18,6 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_PREFIX:PATH=/app",
                 "-DBUILD_SDL_JSTEST=OFF",
                 "-DBUILD_SDL2_JSTEST=ON"
             ],
@@ -25,7 +25,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/sdl-jstest/sdl-jstest.git",
-                    "commit": "b6c9d960682bce8868d9fa1df3bfd843482eac56"
+                    "commit": "6f7927bfcf9cf0a2cfada54fd6e2ac22d6d9ee86"
                 }
             ]
         }
